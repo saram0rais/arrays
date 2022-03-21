@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            //2. Faça um algoritmo para ler 12 números e armazenar em dois arrays: um com os números acima de 50. Outro com números abaixo de 50.
+
+            var contador = 0;
+            var array = [];
+            var array_2 =[];
+            var numero = 0;
+
+            while(contador < 12){
+             numero = parseInt(prompt("Informe 12 números."));
+            
+
+            if(numero > 50){
+
+                array.push(numero);
+            }
+
+            else{
+                array_2.push(numero);
+            }
+            contador++;
+            }
+            
+            document.write("Maiores que 50: "+array+" Menores que 50: "+array_2+"")
+
+        </script>
+    </head>
+</html>

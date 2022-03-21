@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script>
+            var arrayTopper = ["capa da invisibilidade ","pedra do despertar ","varinha das varinhas ", "poção da inocência ","uma poção da mentira ", "outra poção da mentira", "poção anti-inteligência "]
+            var arrayDrofo = ["anel da invisibilidade ","par de bota mágica ","outra bota mágica ","poção do sono ","uma poção da inocência ","outra poção da inocência "]
+           
+
+            // TOPPER
+            // Consumiu uma das poções da mentira.
+            arrayTopper.splice(4,1);
+
+            // Perdeu sua pedra.
+            arrayTopper.splice(1,1);
+
+            // Ganhou um par de botas mágicas do Drofo.
+            arrayTopper.push("botas mágicas ");
+
+            // Achou um escudo mágico.
+            arrayTopper.push("escudo mágico ");
+
+            // Achou uma espada mágica. 
+            arrayTopper.push("espada mágica ");
+
+            // Deu uma poção anti-inteligência para o Drogo
+            arrayTopper.splice(6,6);
+
+            //DROFO
+            // Ganhou mais uma bota mágica
+            arrayDrofo.push("bota mágica ");
+
+            // Usou sua poção do sono
+            arrayDrofo.splice(3,2);
+
+            // Consumiu a poção anti-inteligência do Torper
+            arrayDrofo.push("poção anti-inteligência ");
+            arrayDrofo.pop();
+
+            // Encontrou um ovo de dragão 
+            arrayDrofo.push("Ovo de Dragão ");
+
+            // Encontrou uma coxinha.
+            arrayDrofo.push("Coxinha ");
+
+            //Deu um par de botas para o Topper.
+            arrayDrofo.splice(1,1);
+
+
+            document.write("Itens Droffo no Final da Jornada: <br>" + arrayDrofo + "<br> <br> Itens Topper no Final da Jornada: <br>" + arrayTopper );
+
+        </script>
+    </head>
+</html>
